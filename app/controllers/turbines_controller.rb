@@ -1,4 +1,5 @@
 class TurbinesController < ApplicationController
+# before_action :authenticate_user!
 
   def index
     @turbines = Turbine.all()
