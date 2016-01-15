@@ -41,6 +41,6 @@ class TurbinesController < ApplicationController
   private
 
   def turbine_params
-    params.require(:turbine).permit(:cut_in_speed, :cut_out_speed, :tower_height, :diameter, :cost)
+    params.require(:turbine).permit(:tower_height, :diameter, :rated_capacity, :city, :state, :photo_url, :name)
   end
 end
